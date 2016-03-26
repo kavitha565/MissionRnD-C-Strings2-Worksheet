@@ -13,7 +13,7 @@ namespace spec
 
 		TEST_METHOD(NormalStringFrequency)
 		{
-			char sentences[][100] = { "abababa", "he he", "ab cd ab cd", "    ", "1234 aaaaaaa", "asd324", "yzqwer 23425", "a" };
+			char sentences[][100] = { "abababa", "he he", "ab cd ab cd", "    ", "1234 aaaaaaa", "", "yzqwer 23425", "a" };
 			char words[][100] = { "ab", "he", "ab cd", " ", "aa", "asd324", "x", "a" };
 			int counts[100] = { 3,2,2,4,6,1,0};
 			int sc = 7;
