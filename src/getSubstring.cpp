@@ -20,18 +20,14 @@ original String
 char * get_sub_string(char *str, int i, int j){
 	if (str==NULL||i>j)
     return NULL;
-	else
-	{
 		int k=0;
 		char *res = (char*)malloc(10 * sizeof(char));
 		while (i<=j)
 		{
-			res[k] = str[i];
-			i++;
-			k++;
+			res[k++] = str[i++];
 		}
 		res[k] = '\0';
 		return res;
-	}
+	
 
 }
